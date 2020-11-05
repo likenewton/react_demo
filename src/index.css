@@ -1,0 +1,105 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font: 14px "Century Gothic", Futura, sans-serif;
+  overflow-x: hidden;
+}
+
+.ellipsis {
+  display: block;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+.ellipsis_3 {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+}
+
+.clearfix::before,
+.clearfix::after {
+  line-height: 0;
+  display: block;
+  visibility: hidden;
+  clear: both;
+  height: 0;
+  content: '';
+}
+
+.grey {
+  color: #aaa;
+}
+
+.comments {
+  width: 100%;
+  min-height: 400px;
+  background: #f1f1f1;
+  padding: 20px;
+}
+
+.comments-card {
+  background: #fff;
+  width: 100%;
+  padding: 15px;
+  border-radius: 7px;
+  margin-bottom: 20px;
+}
+
+.comments-card:last-of-type {
+  margin-bottom: 0;
+}
+
+.comments-card .head {
+  display: flex;
+  align-items: center;
+  height: 30px;
+}
+
+.comments-card .head .text {
+  display: inline-block;
+  width: calc(100% - 90px);
+}
+
+.comments-card .middle {
+  padding: 10px 0;
+  
+}
+
+.comments-card .middle .left {
+  float: left;
+  padding-right: 10px;
+}
+
+.avatar {
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: 1px solid #eee;
+  background: pink;
+}
+
+.comments-card .middle .left {
+  overflow: hidden;
+}
+
+.comments-card .info {
+  line-height: 24px;
+  word-break: break-all;
+  transition: all 0.2s;
+}
+
+.comments-card .btn {
+  margin-left: 50px;
+  color: #409eff;
+  float: right;
+}
+
